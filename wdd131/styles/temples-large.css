@@ -1,0 +1,49 @@
+@media (min-width: 700px) {
+  
+  .site-header .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  
+  .menu { display: none; }
+  .nav { display: block !important; }
+  .nav-list {
+    display: flex;              
+    flex-direction: row;
+    gap: .75rem;                
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+ 
+  .site-title { font-size: 1.6rem; }
+  .page-heading {
+    font-size: 1.5rem;
+    max-width: var(--maxw);
+    margin: 1rem auto 0.5rem;
+    padding: 0 1.25rem;
+  }
+
+  
+  .gallery {
+    display: grid;                                 
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+    max-width: var(--maxw);
+    margin: 1rem auto 2rem;
+    padding: 0 1.25rem;                              
+  }
+
+  
+  .site-footer .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 1.25rem 1.25rem;
+  }
+}
