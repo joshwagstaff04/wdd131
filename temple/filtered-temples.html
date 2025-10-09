@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album</title>
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  
+  <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+  <header class="site-header">
+  <div class="wrap">
+    <h1 class="site-title">Temple Album</h1>
+
+    
+    <button id="menu" class="menu" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+
+    <nav id="primary-nav" class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#home" data-filter="home">Home</a></li>
+        <li><a href="#old" data-filter="old">Old</a></li>
+        <li><a href="#new" data-filter="new">New</a></li>
+        <li><a href="#large" data-filter="large">Large</a></li>
+        <li><a href="#small" data-filter="small">Small</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="site-main">
+    <h2 class="page-heading">Album</h2>
+    <section class="gallery" id="gallery" aria-live="polite" aria-busy="false"></section>
+
+    
+ 
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Josh Wagstaff</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
