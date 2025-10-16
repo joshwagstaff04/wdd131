@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Programs – Summit Strength</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/programs.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span>Summit Strength</a>
+      <button class="menu-btn" aria-label="Toggle menu">Menu</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="card">
+          <h1>Programs</h1>
+          <div class="filters">
+            <label for="difficulty">Filter by difficulty:</label>
+            <select id="difficulty">
+              <option value="all">All</option>
+              <option value="foundation">Foundation</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+          <div id="programGrid" class="grid grid-3" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <small>© 2025 Summit Strength Fitness</small>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/programs.js" defer></script>
+</body>
+</html>
