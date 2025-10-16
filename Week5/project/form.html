@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Review</title>
+  <meta name="description" content="Submit a product review with rating, install date, features, and optional comments." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    
+    :root {
+      --primary:#0E2A47;   
+      --accent:#00C853;    
+      --ink:#1C2430;       
+      --muted:#F6F9FC;     
+      --line:#DBE5F1;     
+      --field:#ffffff;     
+      --radius:10px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--muted);
+      line-height: 1.6;
+    }
+
+    
+    .topbar {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 14px 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .topbar h1 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    
+    .wrap {
+      max-width: 340px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    
+    .field { margin: 10px 0; }
+    label, legend {
+      display: block;
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 6px;
+      color: var(--primary);
+    }
+    .hint {
+      color: #6b7280;
+      font-size: 0.85rem;
+      margin: 0 0 8px;
+    }
+
+    select, input[type="text"], input[type="date"], textarea {
+      width: 100%;
+      background: var(--field);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font: inherit;
+      color: var(--ink);
+    }
+    textarea { resize: vertical; min-height: 110px; }
+
+    
+    .star-labels, .rating-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+      align-items: start;
+      row-gap: 4px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .star-labels span {
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--accent);
+      letter-spacing: 1.25px;
+      display: flex;
+      align-items: flex-end;
+      height: 14px;
+    }
+
+    .rating-row input {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      accent-color: var(--accent);
+    }
+
+    
+    .checks .check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+    }
+    .checks input {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--accent);
+    }
+
+    
+    .actions { margin-top: 12px; }
+    .btn {
+      width: 100%;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      padding: 10px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.25s ease;
+    }
+    .btn:hover {
+      background: #00b14a;
+    }
+
+    
+    .footerband {
+      margin-top: 16px;
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 10px 8px;
+      font-size: 0.88rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar"><h1>Product Review</h1></div>
+
+  <main class="wrap">
+    <form class="card" method="get" action="review.html">
+      
+      <div class="field">
+        <label for="productName">Product Name</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Choose a Product ...</option>
+        </select>
+      </div>
+
+      
+      <fieldset class="field" style="border:0; padding:0; margin-top:10px">
+        <legend>Overall Rating</legend>
+        <div class="star-labels">
+          <span>★</span>
+          <span>★★</span>
+          <span>★★★</span>
+          <span>★★★★</span>
+          <span>★★★★★</span>
+        </div>
+        <div class="rating-row">
+          <input type="radio" id="rating1" name="rating" value="1" required>
+          <input type="radio" id="rating2" name="rating" value="2">
+          <input type="radio" id="rating3" name="rating" value="3">
+          <input type="radio" id="rating4" name="rating" value="4">
+          <input type="radio" id="rating5" name="rating" value="5">
+        </div>
+      </fieldset>
+
+      
+      <div class="field">
+        <label for="installDate">Date of Installation</label>
+        <input type="date" id="installDate" name="installDate" required>
+      </div>
+
+      
+      <fieldset class="field" style="border:0; padding:0">
+        <legend>Which features did you find useful in the product?<br>
+          <em class="hint">(Check all that apply)</em>
+        </legend>
+        <div class="checks">
+          <label class="check"><input type="checkbox" name="features" value="Durability"> Durability</label>
+          <label class="check"><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+          <label class="check"><input type="checkbox" name="features" value="Performance"> Performance</label>
+          <label class="check"><input type="checkbox" name="features" value="Design"> Design</label>
+        </div>
+      </fieldset>
+
+      
+      <div class="field">
+        <label for="review">Written Review <span class="hint">(Optional)</span></label>
+        <textarea id="review" name="review"></textarea>
+      </div>
+
+      
+      <div class="field">
+        <label for="user">Your Name <span class="hint">(Optional)</span></label>
+        <input type="text" id="user" name="user" autocomplete="name">
+      </div>
+
+      
+      <div class="actions">
+        <input class="btn" type="submit" value="Post Review">
+      </div>
+    </form>
+
+   
+  </main>
+
+  <script>
+    const products = [
+      { id: "fc-1888", name: "Flux Capacitor" },
+      { id: "pl-3141", name: "Power Laces" },
+      { id: "mr-1100", name: "Mr. Fusion" },
+      { id: "sh-1234", name: "Hoverboard" },
+      { id: "gt-9000", name: "Gym Tracker Pro" }
+    ];
+
+    (function populateProducts(){
+      const sel = document.getElementById('productName');
+      products.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p.id;
+        opt.textContent = p.name;
+        sel.appendChild(opt);
+      });
+    })();
+
+    (function(){
+      const d = new Date(document.lastModified);
+      const pad = n => String(n).padStart(2,'0');
+      const stamp = `${pad(d.getMonth()+1)}/${pad(d.getDate())}/${d.getFullYear()} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+      document.getElementById('lastmod').textContent = stamp;
+    })();
+  </script>
+</body>
+</html>
