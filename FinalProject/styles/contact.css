@@ -1,0 +1,7 @@
+label{font-weight:700; color:var(--primary)}
+input,select,textarea{
+  width:100%; padding:10px 12px; border:1px solid var(--line);
+  border-radius:10px; background:#fff; color:#111827;
+}
+.confirm{margin-top:10px; font-weight:700; color:var(--accent)}
+.small{color:#4b5563}

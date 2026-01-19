@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Planning Document – Summit Strength Fitness</title>
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Summit Strength Fitness – Website Planning Document</h1>
+        <p class="hint">This is a living plan for next week’s responsive website build.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>Summit Strength Fitness</strong> — a clear, athletic brand focused on helping people reach their next “summit” through strength training and conditioning.</p>
+      <p class="hint"><strong>Optional domain:</strong> summitstrengthfit.com (or summitstrength.co)</p>
+    </section>
+
+    
+    <section id="purpose">
+      <h2>Site Purpose</h2>
+      <p>The site will help visitors understand programs (strength, conditioning, foundations), view pricing/schedules, learn about the coaches, and contact the gym or book a free intro session.</p>
+      <ul>
+        <li>Program overviews with quick benefits and difficulty guidance</li>
+        <li>Schedule & pricing highlights with a clear “Try a Free Session” CTA</li>
+        <li>Coach bios with certifications + short testimonials</li>
+        <li>Contact form and location info</li>
+      </ul>
+    </section>
+
+    
+    <section id="scenarios">
+      <h2>Scenarios (Visitor Questions)</h2>
+      <ul>
+        <li>“I’m new—what program should I start with?”</li>
+        <li>“What times are classes, and how much does it cost?”</li>
+        <li>“Who are the coaches and what are their credentials?”</li>
+      </ul>
+    </section>
+
+   
+    <section id="colors">
+      <h2>Color Schema</h2>
+      <p>Use <strong style="color:var(--primary)">Summit Navy</strong> for headings/nav and <strong style="color:var(--accent)">Lime Lift</strong> for CTAs and highlights. Maintain strong contrast on white for accessibility.</p>
+      <div class="swatches">
+        <div class="swatch">
+          <div class="chip primary" title="#0E2A47"></div>
+          <div class="meta"><strong>Primary</strong> <span class="code">#0E2A47</span> — headings, nav, buttons</div>
+        </div>
+        <div class="swatch">
+          <div class="chip accent" title="#00C853"></div>
+          <div class="meta"><strong>Accent</strong> <span class="code">#00C853</span> — CTAs, highlights</div>
+        </div>
+        <div class="swatch">
+          <div class="chip ink" title="#1C2430"></div>
+          <div class="meta"><strong>Body Text</strong> <span class="code">#1C2430</span> — paragraphs</div>
+        </div>
+        <div class="swatch">
+          <div class="chip muted" title="#F6F9FC"></div>
+          <div class="meta"><strong>Muted</strong> <span class="code">#F6F9FC</span> — card/page background</div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="typography">
+      <h2>Typography</h2>
+      <p><strong>Bebas Neue</strong> for H1–H3 (athletic display), <strong>Inter</strong> for body text, nav, and buttons (weights 400–700). This combo balances bold headlines with readable copy.</p>
+    </section>
+
+    
+    <section id="wireframes">
+      <h2>Wireframes (Home Page)</h2>
+      <p class="hint">These are simple layout blocks—actual content/images will be added in the build.</p>
+
+      <div class="frames">
+        
+        <div class="frame">
+          <div class="device">Mobile ~375px</div>
+          <div class="canvas mobile">
+            <div class="box hero" data-label="Hero: headline + CTA"></div>
+            <div class="box cta" data-label="Quick value props"></div>
+            <div class="stack">
+              <div class="box mod" data-label="Program teaser (Strength)"></div>
+              <div class="box mod" data-label="Program teaser (Conditioning)"></div>
+              <div class="box mod" data-label="Testimonial"></div>
+              <div class="box mod" data-label="Footer: contact/map link"></div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="frame">
+          <div class="device">Desktop ~1200px</div>
+          <div class="canvas desktop">
+            <div class="box hero" data-label="Wide hero: headline + CTA"></div>
+            <div class="desktop grid">
+              <div class="box content" data-label="Program grid / filters"></div>
+              <div class="desktop sidebar">
+                <div class="box side" data-label="Schedule snapshot"></div>
+                <div class="box side" data-label="Coach highlights"></div>
+                <div class="box side" data-label="Map & contact"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    >
+    <section id="css">
+      <h2>CSS Notes</h2>
+      <ul>
+        <li>Apply <span class="code">--primary</span> to headings/nav; <span class="code">--accent</span> to buttons/CTAs.</li>
+        <li>Use CSS Grid for program cards; generous spacing and rounded corners.</li>
+        <li>Responsive breakpoints around ~640px and ~1024px.</li>
+      </ul>
+    </section>
+
+    
+    <section id="testing">
+      <h2>Testing & Self-Check</h2>
+      <ul>
+        <li>Validate HTML (no errors)</li>
+        <li>Accessibility: alt text, heading order, keyboard focus, color contrast (AA)</li>
+        <li>Lighthouse: Performance, Accessibility, Best Practices, SEO (mobile + desktop)</li>
+        <li>Images optimized and set to lazy-load in the final build</li>
+        <li>Descriptive titles and meta descriptions</li>
+      </ul>
+      <p class="hint">This plan may evolve during development and will be updated as needed.</p>
+    </section>
+  </main>
+</body>
+</html>

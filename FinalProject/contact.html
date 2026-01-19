@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact – Summit Strength</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span>Summit Strength</a>
+      <button class="menu-btn" aria-label="Toggle menu">Menu</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="card">
+          <h1>Contact / Free Intro</h1>
+          <p>Tell us a bit about you and which program you’re interested in. We’ll follow up ASAP.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="grid grid-2">
+              <div>
+                <label for="name">Your Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="grid grid-2">
+              <div>
+                <label for="program">Program</label>
+                <select id="program" name="program" required>
+                  <option value="" disabled selected>Select a program…</option>
+                </select>
+              </div>
+              <div>
+                <label for="time">Preferred Time</label>
+                <select id="time" name="time" required>
+                  <option value="morning">Morning</option>
+                  <option value="midday">Midday</option>
+                  <option value="evening">Evening</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="message">Message (optional)</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <button class="btn" type="submit">Send</button>
+            <p id="confirm" class="confirm" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="small">Messages sent from this browser: <strong id="msgCount">0</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <small>© 2025 Summit Strength Fitness</small>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</body>
+</html>

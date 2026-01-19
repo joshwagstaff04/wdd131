@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album</title>
+  <meta name="description" content="Temple Project WDD131" />
+  <meta name="author" content="Josh Wagstaff" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script defer src="scripts/temples.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="site-title">Temple Album</h1>
+
+      <button id="menu" class="menu" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" data-filter="home">Home</a></li>
+          <li><a href="#old" data-filter="old">Old</a></li>
+          <li><a href="#new" data-filter="new">New</a></li>
+          <li><a href="#large" data-filter="large">Large</a></li>
+          <li><a href="#small" data-filter="small">Small</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <h2 class="page-heading">Temple Album</h2>
+
+  <section class="gallery" id="gallery"> 
+
+
+      <figure class="card" data-era="old" data-size="large">
+        <img src="images/temple-picture1.jpg" alt="Salt Lake Temple" width="600" height="400" fetchpriority="high">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+
+      <figure class="card" data-era="old" data-size="large">
+        <img src="images/temple-picture2.jpg" alt="Laie Hawaii Temple" width="600" height="400" fetchpriority="high">
+        <figcaption>Laie Hawaii Temple</figcaption>
+      </figure>
+
+      <figure class="card" data-era="new" data-size="small">
+        <img src="images/temple-picture3.jpg" alt="Rome Italy Temple" loading="lazy" width="600" height="400">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+
+      <figure class="card" data-era="new" data-size="large">
+        <img src="images/temple-picture4.jpg" alt="Payson Utah Temple" loading="lazy" width="600" height="400">
+        <figcaption>Payson Utah Temple</figcaption>
+      </figure>
+
+      <figure class="card" data-era="old" data-size="small">
+        <img src="images/temple-picture5.jpg" alt="Nauvoo Illinois Temple" loading="lazy" width="600" height="400">
+        <figcaption>Nauvoo Illinois Temple</figcaption>
+      </figure>
+
+      <figure class="card" data-era="new" data-size="small">
+        <img src="images/temple-picture6.jpg" alt="Tucson Arizona Temple" loading="lazy" width="600" height="400">
+        <figcaption>Tucson Arizona Temple</figcaption>
+      </figure>
+
+      <figure class="card" data-era="new" data-size="large">
+        <img src="images/temple-picture7.jpg" alt="Gilbert Arizona Temple" loading="lazy" width="600" height="400">
+        <figcaption>Gilbert Arizona Temple</figcaption>
+      </figure>
+
+      <figure class="card" data-era="old" data-size="large">
+        <img src="images/temple-picture8.jpg" alt="Logan Utah Temple" loading="lazy" width="600" height="400">
+        <figcaption>Logan Utah Temple</figcaption>
+      </figure>
+
+      <figure class="card" data-era="new" data-size="small">
+        <img src="images/temple-picture9.jpg" alt="Fort Lauderdale Florida Temple" loading="lazy" width="600" height="400">
+        <figcaption>Fort Lauderdale Florida Temple</figcaption>
+      </figure>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Josh Wagstaff</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
