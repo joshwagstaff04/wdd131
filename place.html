@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iceland</title>
+  <meta name="description" content="Country Page.">
+  <meta name="author" content="Josh Wagstaff">
+  
+  <link rel="stylesheet" href="styles/place.css">
+  
+  <script defer src="scripts/place.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Iceland</h1>
+  </header>
+
+  <main>
+    <div class="hero-container">
+      <picture class="hero">
+        <source media="(min-width: 1000px)" srcset="images/iceland-large.webp" type="image/webp">
+        <source media="(min-width: 700px)" srcset="images/iceland-large.webp" type="image/webp">
+        <img src="images/iceland-small.webp" alt="View of iceland">
+      </picture>
+
+      <section class="data-section">
+        <h2>Data</h2>
+        <ul class="data-list">
+          <li><span class="label">Capital:</span> <span class="value">Reykjavik</span></li>
+          <li><span class="label">Population:</span> <span class="value">372,000</span></li>
+          <li><span class="label">Area:</span> <span class="value">103,000 km²</span></li>
+          <li><span class="label">Language:</span> <span class="value">Icelandic</span></li>
+          <li><span class="label">Currency:</span> <span class="value">Icelandic Króna</span></li>
+          <li><span class="label">Time Zone:</span> <span class="value">GMT (UTC+0)</span></li>
+        </ul>
+      </section>
+
+      <section class="weather-section">
+        <h2>Weather</h2>
+        <div class="weather-icon-mobile">
+          <img src="images/weather-icon.svg" alt="Windy and clear weather" width="100" height="100">
+        </div>
+        <ul class="weather-list">
+          <li><span class="label">Temperature:</span> <span class="value">5°C</span></li>
+          <li><span class="label">Conditions:</span> <span class="value">Windy & Clear</span></li>
+          <li><span class="label">Wind Speed:</span> <span class="value">25 km/h</span></li>
+          <li><span class="label">Wind Chill:</span> <span class="value" id="windchill">N/A</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Josh Wagstaff - Iceland</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
