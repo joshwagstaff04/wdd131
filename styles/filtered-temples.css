@@ -49,6 +49,10 @@ header h1 {
   cursor: pointer;
 }
 
+nav {
+  display: flex;
+}
+
 .menu {
   display: flex;
 }
