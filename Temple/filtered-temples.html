@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Temple Album</h1>
+      <button id="menu-btn" class="menu-btn">☰</button>
+      <nav id="menu" class="menu">
+        <ul>
+          <li><a href="#" data-filter="all">Home</a></li>
+          <li><a href="#" data-filter="old">Old</a></li>
+          <li><a href="#" data-filter="new">New</a></li>
+          <li><a href="#" data-filter="large">Large</a></li>
+          <li><a href="#" data-filter="small">Small</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 id="heading">Home</h2>
+      <div id="temples" class="temples-grid">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Josh Wagstaff</p>
+      <p>Last Modified: <span id="modified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/filtered-temples.js"></script>
+</body>
+</html>
