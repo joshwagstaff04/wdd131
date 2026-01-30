@@ -88,7 +88,6 @@ const temples = [
 function getYear(dateStr) {
   return parseInt(dateStr.split(',')[0]);
 }
-
 function displayTemples(list) {
   const container = document.getElementById('temples');
   container.innerHTML = '';
@@ -109,33 +108,28 @@ function displayTemples(list) {
 
 function filterTemples(type) {
   const heading = document.getElementById('heading');
-
   if (type === 'all') {
     displayTemples(temples);
     heading.textContent = 'Home';
   } else if (type === 'old') {
-    const old = temples.filter(t => getYear(t.dedicated) < 1900);
-    displayTemples(old);
+    const oldTemples = temples.filter(temple => getYear(temple.dedicated) < 1900);
+    displayTemples(oldTemples);
     heading.textContent = 'Old';
   } else if (type === 'new') {
-    const newTemples = temples.filter(t => getYear(t.dedicated) > 2000);
-    displayTemples(newTemples);
+    const recentTemples = temples.filter(temple => getYear(temple.dedicated) > 2000);
+    displayTemples(recentTemples);
     heading.textContent = 'New';
   } else if (type === 'large') {
-    const large = temples.filter(t => t.area > 90000);
-    displayTemples(large);
+    const largeTemples = temples.filter(temple => temple.area > 90000);
+    displayTemples(largeTemples);
     heading.textContent = 'Large';
   } else if (type === 'small') {
-    const small = temples.filter(t => t.area < 10000);
-    displayTemples(small);
+    const smallTemples = temples.filter(temple => temple.area < 10000);
+    displayTemples(smallTemples);
     heading.textContent = 'Small';
   }
-
-  // close menu
   document.getElementById('menu').classList.remove('active');
 }
-
-// menu toggle
 const menuBtn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
 
@@ -143,7 +137,6 @@ menuBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
-// filter links
 const filterLinks = document.querySelectorAll('[data-filter]');
 filterLinks.forEach(link => {
   link.addEventListener('click', (e) => {
@@ -153,9 +146,6 @@ filterLinks.forEach(link => {
   });
 });
 
-// set year and date
-document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('modified').textContent = document.lastModified;
-
-// show all temples on load
+document.getElementById('year').textContent = new Date().getFullYear();
 displayTemples(temples);

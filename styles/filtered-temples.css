@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -38,7 +37,6 @@ header h1 {
   font-size: 28px;
   margin: 0;
 }
-
 .menu-btn {
   display: none;
   background: none;
@@ -88,8 +86,8 @@ main h2 {
 
 .temples-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
 
 .temple-card {
@@ -103,7 +101,7 @@ main h2 {
 }
 
 .temple-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
