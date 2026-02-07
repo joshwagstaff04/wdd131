@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Review Form</title>
+    <meta name="description" content="Submit your product review and share your experience.">
+    <meta name="author" content="Joshua Wagstaff">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <header>
+        <span id="course-title">Product Review Form</span>
+    </header>
+    
+    <nav aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="index.html">Home</a>
+            <a href="filtered-temples.html">Temples</a>
+            <a href="place.html">Places</a>
+            <a href="form.html" class="active">Review</a>
+        </div>
+    </nav>
+
+    <main id="maincontent">
+        <div class="form-container">
+            <form method="get" action="review.html" id="reviewForm">
+                
+                <div class="form-group">
+                    <label for="product-select">Product Name</label>
+                    <select id="product-select" name="product" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </div>
+
+                <div class="rating-section">
+                    <label>Overall Rating</label>
+                    <div class="rating-group">
+                        <label class="rating-label">
+                            <div class="stars-display">★</div>
+                            <input type="radio" name="rating" id="rating-1" value="1" required>
+                        </label>
+                        <label class="rating-label">
+                            <div class="stars-display">★★</div>
+                            <input type="radio" name="rating" id="rating-2" value="2">
+                        </label>
+                        <label class="rating-label">
+                            <div class="stars-display">★★★</div>
+                            <input type="radio" name="rating" id="rating-3" value="3">
+                        </label>
+                        <label class="rating-label">
+                            <div class="stars-display">★★★★</div>
+                            <input type="radio" name="rating" id="rating-4" value="4">
+                        </label>
+                        <label class="rating-label">
+                            <div class="stars-display">★★★★★</div>
+                            <input type="radio" name="rating" id="rating-5" value="5">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="install-date">Date of Installation</label>
+                    <input type="date" id="install-date" name="installDate" required>
+                </div>
+
+                <div class="features-section">
+                    <label>Which features did you find useful in the product? <span class="italic">(Check all that apply)</span></label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" id="feature-1" value="Durability">
+                            Durability
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" id="feature-2" value="Ease of Use">
+                            Ease of Use
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" id="feature-3" value="Performance">
+                            Performance
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" id="feature-4" value="Design">
+                            Design
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-text">Written Review <span class="optional">(Optional)</span></label>
+                    <textarea id="review-text" name="review" rows="5" placeholder=""></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
+                    <input type="text" id="user-name" name="userName" placeholder="">
+                </div>
+
+                <div class="form-buttons">
+                    <input type="submit" value="Post Review" class="submit-btn">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌍 Joshua Wagstaff 🌍 Farmington, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

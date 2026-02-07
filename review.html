@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review Submitted</title>
+    <meta name="description" content="Thank you for submitting your product review.">
+    <meta name="author" content="Joshua Wagstaff">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <header>
+        <span id="course-title">Review Confirmation</span>
+    </header>
+    
+    <nav aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="index.html">Home</a>
+            <a href="filtered-temples.html">Temples</a>
+            <a href="place.html">Places</a>
+            <a href="form.html">Review</a>
+        </div>
+    </nav>
+
+    <main id="maincontent">
+        <div class="confirmation-container">
+            <div class="confirmation-card">
+                <div class="success-icon">✓</div>
+                <h1>Review Submitted Successfully</h1>
+                <p class="confirmation-message">Thank you for sharing your feedback! Your review has been recorded.</p>
+                
+                <div class="review-summary">
+                    <h2>Your Review Summary</h2>
+                    <div id="summary-content"></div>
+                </div>
+
+                <div class="counter-section">
+                    <p class="counter-label">Total Reviews Completed:</p>
+                    <div class="counter-display" id="review-counter">0</div>
+                </div>
+
+                <div class="button-group">
+                    <a href="form.html" class="btn-primary">Submit Another Review</a>
+                    <a href="index.html" class="btn-secondary">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌍 Joshua Wagstaff 🌍 Farmington, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

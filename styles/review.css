@@ -1,0 +1,160 @@
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 20px;
+}
+
+.confirmation-card {
+    background-color: white;
+    padding: 40px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.success-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 48px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.confirmation-card h1 {
+    font-size: 32px;
+    color: var(--brand);
+    margin-bottom: 10px;
+}
+
+.confirmation-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.review-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.review-summary h2 {
+    font-size: 18px;
+    color: var(--brand);
+    margin-bottom: 15px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.summary-value {
+    color: #666;
+    text-align: right;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.counter-section {
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin: 30px 0;
+    border-left: 4px solid var(--accent);
+}
+
+.counter-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--brand);
+    margin-bottom: 10px;
+}
+
+.counter-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1e3f5a;
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #d0d0d0;
+}
+
+@media (max-width: 600px) {
+    .confirmation-container {
+        min-height: 50vh;
+        padding: 15px;
+    }
+
+    .confirmation-card {
+        padding: 25px;
+    }
+
+    .success-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 40px;
+        line-height: 70px;
+    }
+
+    .confirmation-card h1 {
+        font-size: 24px;
+    }
+
+    .counter-display {
+        font-size: 40px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        padding: 12px;
+    }
+}
