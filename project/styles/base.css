@@ -1,5 +1,5 @@
-/* Base Styles for BudgetWise */
 
+/* Base Styles for my WDD131 Final Project */
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +16,8 @@ body {
   color: #333;
   line-height: 1.6;
 }
+
+
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +37,8 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 /* Lists */
 ul, ol {
   margin-bottom: 1rem;
@@ -49,6 +53,8 @@ li {
 section {
   margin-bottom: 2rem;
 }
+
+
 
 /* Skip Link for Accessibility */
 .skip-link {
@@ -66,12 +72,16 @@ section {
   top: 0;
 }
 
+
+
 /* Responsive Images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
+
 
 /* Tables */
 table {

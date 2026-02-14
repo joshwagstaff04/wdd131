@@ -368,5 +368,5 @@ function init() {
   updateDisplay();
 }
 
-// Start when page is ready
+// Start when page its ready
 init();

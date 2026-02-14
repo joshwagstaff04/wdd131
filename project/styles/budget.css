@@ -7,6 +7,7 @@
   display: none;
 }
 
+
 /* Main body styling */
 body {
   font-family: Arial, sans-serif;
@@ -15,6 +16,7 @@ body {
   margin: 0;
   line-height: 1.6;
 }
+
 
 /* Header and navigation */
 header {
@@ -68,6 +70,7 @@ nav a.active {
 }
 
 
+
 /* Main content area */
 
 main {
@@ -101,6 +104,7 @@ main > h2 {
   max-width: 700px;
   margin: 0 auto;
 }
+
 
 
 /* Button styles */
@@ -227,6 +231,7 @@ main > h2 {
   background-color: #388e3c;
 }
 
+
 /* Summary section */
 .summary {
   background-color: white;
@@ -267,6 +272,7 @@ main > h2 {
   font-weight: bold;
   margin: 0;
 }
+
 
 /* Entry list and items */
 .entries-list {
@@ -382,6 +388,7 @@ main > h2 {
 }
 
 
+
 /* Home page hero section */
 
 .hero {
@@ -419,6 +426,7 @@ main > h2 {
 }
 
 
+
 /* Features section */
 
 .features h2 {
@@ -454,6 +462,7 @@ main > h2 {
 }
 
 
+
 /* Call to action section */
 
 .cta {
@@ -470,7 +479,7 @@ main > h2 {
 }
 
 .cta .btn-primary {
-  background-color: var(--white);
+  background-color: #ffffff;
   color: #2c5aa0;
   font-weight: 700;
 }
@@ -490,6 +499,7 @@ main > h2 {
 .how-it-works li {
   margin-bottom: 1rem;
 }
+
 
 
 /* Tips page styles */
@@ -544,6 +554,7 @@ main > h2 {
   border-bottom: 1px solid #e8e8e8;
 }
 
+
 /* Footer */
 .additional-resources li:last-child {
   border-bottom: none;
@@ -569,7 +580,8 @@ footer a {
 }
 
 
-/* Mobile responsive - tablets */
+
+/* Mobile responsive for tablets or ipads*/
 
 @media (max-width: 768px) {
   header h1 {
@@ -620,7 +632,9 @@ footer a {
     gap: 0.5rem;
   }
 
-/* Mobile responsive - phones */
+
+
+/* Mobile responsive for phones */
   .tips-container {
     grid-template-columns: 1fr;
   }
